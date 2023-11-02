@@ -30,8 +30,7 @@ Visit our github.</description>
       <link>https://syntheticspeech.github.io/docs/research/</link>
       <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
       <guid>https://syntheticspeech.github.io/docs/research/</guid>
-      <description>Research # We are trying to generate synthetic audios!
-Visit our github..</description>
+      <description>Research # VALL-E # VALL-E is a neural codec language model for text-to-speech (TTS) synthesis that can generate high-quality speech that is indistinguishable from human speech. It is trained on a massive dataset of text and audio, and can also clone speakers&amp;rsquo; voices, even from a short sample of their speech. VALL-E works by first converting text into a sequence of discrete codes. These codes are then used to generate a corresponding sequence of audio tokens.</description>
     </item>
     <item>
       <title>Samples</title>
