@@ -6,7 +6,7 @@
     <description>Recent content on Synthetic Audio Generation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Nov 2023 14:54:44 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 02 Nov 2023 11:54:44 -0700</lastBuildDate>
     <atom:link href="https://syntheticspeech.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction</title>
@@ -38,6 +38,13 @@ Visit our github.</description>
       <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
       <guid>https://syntheticspeech.github.io/docs/samples/</guid>
       <description> Samples # XTTS and VALL-E-X # Speaker Prompt VALL-E X XTTS hao_31_24000.mp4 hao_vallex.mp4 hao_xtts.mp4 amused.mp4 vallex-amused.mp4 xtts-amused.mp4 anger.mp4 vallex-anger.mp4 xtts-anger.mp4 disgust.mp4 vallex-amused.mp4 xtts-amused.mp4 muffled.mp4 vallex-muffled.mp4 xtts-muffled.mp4 libri.mp4 libri-vallex.mp4 libri-xtts.mp4 vctk.mp4 vctk-vallex.mp4 vctk-xtts.mp4 </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://syntheticspeech.github.io/menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://syntheticspeech.github.io/menu/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
