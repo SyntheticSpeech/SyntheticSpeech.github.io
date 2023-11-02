@@ -37,8 +37,7 @@ Visit our github..</description>
       <link>https://syntheticspeech.github.io/docs/samples/</link>
       <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
       <guid>https://syntheticspeech.github.io/docs/samples/</guid>
-      <description>Samples # We are trying to generate synthetic audios!
-Visit our github.</description>
+      <description> Samples # XTTS and VALL-E-X # Speaker Prompt VALL-E X XTTS hao_31_24000.mp4 hao_vallex.mp4 hao_xtts.mp4 amused.mp4 vallex-amused.mp4 xtts-amused.mp4 anger.mp4 vallex-anger.mp4 xtts-anger.mp4 disgust.mp4 vallex-amused.mp4 xtts-amused.mp4 muffled.mp4 vallex-muffled.mp4 xtts-muffled.mp4 libri.mp4 libri-vallex.mp4 libri-xtts.mp4 vctk.mp4 vctk-vallex.mp4 vctk-xtts.mp4 </description>
     </item>
   </channel>
 </rss>
