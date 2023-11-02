@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Synthetic Audio Generation</title>
+    <link>https://syntheticspeech.github.io/</link>
+    <description>Recent content on Synthetic Audio Generation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Nov 2023 14:54:44 -0700</lastBuildDate>
+    <atom:link href="https://syntheticspeech.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://syntheticspeech.github.io/docs/introduction/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/introduction/</guid>
+      <description>Introduction # We are trying to generate synthetic audios!
+Visit our github.</description>
+    </item>
+    <item>
+      <title>Meet the Team</title>
+      <link>https://syntheticspeech.github.io/docs/team/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/team/</guid>
+      <description>Meet the Team # We are trying to generate synthetic audios!
+Visit our github.</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>https://syntheticspeech.github.io/docs/research/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/research/</guid>
+      <description>Research # We are trying to generate synthetic audios!
+Visit our github..</description>
+    </item>
+    <item>
+      <title>Samples</title>
+      <link>https://syntheticspeech.github.io/docs/samples/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/samples/</guid>
+      <description>Samples # We are trying to generate synthetic audios!
+Visit our github.</description>
+    </item>
+  </channel>
+</rss>
