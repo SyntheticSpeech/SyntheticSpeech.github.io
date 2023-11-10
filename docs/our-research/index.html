@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Our Research # VITS # VITS is a previous SOTA model. It is the first end-to-end model compare to previous 2-stage model, meaning there is no need to produce intermediate mel-spectrums.
+Our fine-tuning code is based on this repo.
+The repo has a pretrained model on VCTK and some Animes. It can be used for fine-tuning Chinese, Japanese and English.
+We self recorded a tiny collection of voices, and tried to fine-tune pretrained VITS model based on this dataset.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Our Research" />
+<meta property="og:description" content="Our Research # VITS # VITS is a previous SOTA model. It is the first end-to-end model compare to previous 2-stage model, meaning there is no need to produce intermediate mel-spectrums.
+Our fine-tuning code is based on this repo.
+The repo has a pretrained model on VCTK and some Animes. It can be used for fine-tuning Chinese, Japanese and English.
+We self recorded a tiny collection of voices, and tried to fine-tune pretrained VITS model based on this dataset." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://syntheticspeech.github.io/docs/our-research/" /><meta property="article:section" content="docs" />
+
+
+
+<title>Our Research | Synthetic Audio Generation</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.a2bb8483ec22da9f5e6083ce252a5528c24f6621553e9eab6bd5943abc7599db.js" integrity="sha256-oruEg&#43;wi2p9eYIPOJSpVKMJPZiFVPp6ra9WUOrx1mds=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Synthetic Audio Generation</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/deepfakes-history/" class="">Deepfakes, Then and Now</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/our-research/" class="active">Our Research</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/team/" class="">Meet the Team</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/samples/" class="">Samples</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Our Research</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#vits">VITS</a></li>
+    <li><a href="#yourtts">YourTTS</a></li>
+    <li><a href="#vall-e">VALL-E</a>
+      <ul>
+        <li><a href="#enhuizhttpsgithubcomsyntheticspeechvall-e-enhuiz"><a href="https://github.com/SyntheticSpeech/vall-e-enhuiz">enhuiz</a></a></li>
+        <li><a href="#eckerhttpsgithubcomsyntheticspeechvall-e-ecker"><a href="https://github.com/SyntheticSpeech/vall-e-ecker">Ecker</a></a></li>
+        <li><a href="#lifeitenghttpsgithubcomsyntheticspeechvall-e"><a href="https://github.com/SyntheticSpeech/vall-e">Lifeiteng</a></a></li>
+        <li><a href="#plachtaahttpsgithubcomsyntheticspeechvall-e-x"><a href="https://github.com/SyntheticSpeech/VALL-E-X">Plachtaa</a></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="our-research">
+  Our Research
+  <a class="anchor" href="#our-research">#</a>
+</h1>
+<h2 id="vits">
+  VITS
+  <a class="anchor" href="#vits">#</a>
+</h2>
+<p>VITS is a previous SOTA model. It is the first end-to-end model compare to previous 2-stage model, meaning there is no need to produce intermediate mel-spectrums.</p>
+<p>Our fine-tuning code is based on <a href="https://github.com/Plachtaa/VITS-fast-fine-tuning">this</a> repo.</p>
+<p>The repo has a pretrained model on VCTK and some Animes. It can be used for fine-tuning Chinese, Japanese and English.</p>
+<p>We self recorded a tiny collection of voices, and tried to fine-tune pretrained VITS model based on this dataset. Besides, we also tried public dataset like LibriSpeech, and publically acquired voice samples like Anne Hathaway&rsquo;s speech. Our experiment records are shown as follow:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Dataset</th>
+<th style="text-align:center">Epoch</th>
+<th style="text-align:center">Result*</th>
+<th style="text-align:right">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Hao&rsquo;s self collected voices (19 Samples)</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">Tune close, pronounciation fail</td>
+<td style="text-align:right">n/a</td>
+</tr>
+<tr>
+<td style="text-align:left">Hao&rsquo;s self collected voices (41 Samples)</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">No improvement</td>
+<td style="text-align:right">n/a</td>
+</tr>
+<tr>
+<td style="text-align:left">Anne Hathaway, 12 mins audio</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">Tune close, pronounciation better, not perfect</td>
+<td style="text-align:right">n/a</td>
+</tr>
+<tr>
+<td style="text-align:left">Hao&rsquo;s self collected voices (15 mins audio, Chinese)</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">Tune close, still strange pronouns, but better than EN</td>
+<td style="text-align:right">n/a</td>
+</tr>
+<tr>
+<td style="text-align:left">LibriSpeech(Speaker 3572, 103 samples)</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">Pretty steady</td>
+<td style="text-align:right">n/a</td>
+</tr>
+</tbody>
+</table>
+<p>*Since performance of synthetic audios are usually evaluated by humans (like MOS), result column records our experience with the output audio.</p>
+<p>We found that the quality of the fine-tuned model is highly <strong>dependend on number of data samples</strong>. A successfully fine-tuned model needs hours of audio samples.</p>
+<h2 id="yourtts">
+  YourTTS
+  <a class="anchor" href="#yourtts">#</a>
+</h2>
+<p>A newer ZS-TTS model based on VITS, proposed by Coqui. It is also multi-lingual. We implemented our fine-tuning based on the open-source code released by Coqui.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Dataset</th>
+<th style="text-align:center">Epoch</th>
+<th style="text-align:center">Result</th>
+<th style="text-align:right">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Hao&rsquo;s self collected voices (19 Samples)</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">fail, voice not clearly formed</td>
+<td style="text-align:right">n/a</td>
+</tr>
+<tr>
+<td style="text-align:left">Hao&rsquo;s self collected voices (19 Samples)</td>
+<td style="text-align:center">160</td>
+<td style="text-align:center">fail, voice not clearly formed</td>
+<td style="text-align:right">n/a</td>
+</tr>
+</tbody>
+</table>
+<p>We did not dig deeper into the training, as we found VALL-E model later and shifted our priority to VALL-E model.</p>
+<h2 id="vall-e">
+  VALL-E
+  <a class="anchor" href="#vall-e">#</a>
+</h2>
+<p>Microsoft&rsquo;s new SOTA ZS-TTS model that proposed a different way to perform the task. It tokenize the audio prompt and text prompt into T * 8 matrix, and then feed them into an Auto-regressive model and a Non-autogressive model.</p>
+<p>For each model, the basic strcuture contains several embedding layers, and a Transformer Decoder layer.</p>
+<p>Since Microsoft does not publish VALL-E&rsquo;s code, we tried several publically avaiable implementation of Microsoft VALL-E, described in following sections.</p>
+<h3 id="enhuizhttpsgithubcomsyntheticspeechvall-e-enhuiz">
+  <a href="https://github.com/SyntheticSpeech/vall-e-enhuiz">enhuiz</a>
+  <a class="anchor" href="#enhuizhttpsgithubcomsyntheticspeechvall-e-enhuiz">#</a>
+</h3>
+<p>This repo uses g2p (Grapheme-to-phoneme conversion) to quantize and tokenize dataset. It also uses Deepspeed to speed up training.</p>
+<p>The main issue with this method is that there is no pretrained model. So we tried to train a backbone model using LibriLight, and the fine-tune the backbone model using self-collected smaller dataset.</p>
+<p>Probelms:</p>
+<ul>
+<li>Training a sophisticated backbone model ourselves requires way more time and knowledge.</li>
+<li>LibriLight is too small (1200 samples) for backbone model.</li>
+<li>Directly trained on self-collected dataset, gives toy result as exepcted.</li>
+</ul>
+<h3 id="eckerhttpsgithubcomsyntheticspeechvall-e-ecker">
+  <a href="https://github.com/SyntheticSpeech/vall-e-ecker">Ecker</a>
+  <a class="anchor" href="#eckerhttpsgithubcomsyntheticspeechvall-e-ecker">#</a>
+</h3>
+<p>Ecker&rsquo;s code is based on enhuiz&rsquo;s scripts, but the author released a pretrained model. So we thought we can conduct our fine-tuning based on the pretrained model.</p>
+<p>Problems:</p>
+<ul>
+<li>pretrained model has error, it only gives nan result in AR forward. We also checked on huggingface, the model is not working.</li>
+<li>Training based on the pretrained model has a high loss.</li>
+</ul>
+<h3 id="lifeitenghttpsgithubcomsyntheticspeechvall-e">
+  <a href="https://github.com/SyntheticSpeech/vall-e">Lifeiteng</a>
+  <a class="anchor" href="#lifeitenghttpsgithubcomsyntheticspeechvall-e">#</a>
+</h3>
+<p>Lifeiteng&rsquo;s implementation relies on Lhotse for its dataset preparation. Lhotse will process the audios into CutSet, and later a DynamicBucketSampler is used for constructing the dataloader.</p>
+<p>One interesting bug we found is that we need to change our dataset to <strong>mono</strong>-channel, since Encodec uses <strong>24KHZ</strong> mono-channel. If stereo inputs are given, we need to use 49KHZ Encodec model.</p>
+<p>No pretrained model is released for Lifeiteng&rsquo;s repo. We found a pioneer who trained on LibriTTS for 100 epoches, and continued our fine-tuning based on his checkpoint.</p>
+<p>Problem:</p>
+<ul>
+<li>The checkpoint performance is very bad.</li>
+<li>On AWS, we met complex version problem brought by torch, nnCUDA, K2 and python version. Seems no easy workable solution can be found among them.</li>
+</ul>
+<h3 id="plachtaahttpsgithubcomsyntheticspeechvall-e-x">
+  <a href="https://github.com/SyntheticSpeech/VALL-E-X">Plachtaa</a>
+  <a class="anchor" href="#plachtaahttpsgithubcomsyntheticspeechvall-e-x">#</a>
+</h3>
+<p>Checkout our fine-tune branch.</p>
+<p>Plachtaa uses Lifeiteng&rsquo;s repo, and releases a super well-trained pretrained model. The only problem is that Plachtaa deleted all traing related codes, like dataset processing, training script and even model&rsquo;s forward pass.</p>
+<p>There are differences between Plachtaa and Lifeiteng&rsquo;s implementation: Plachtaa supports multi-lingual by adding language embedding, uses different tokenizer and trained on different dataset.</p>
+<p>We tried to re-write all these missing training codes, and runned our fine-tuning. Following sections summaries our experiments. We are still facing inference issue as generated audio is mainly noise, actively solving it now.</p>
+<h4 id="implementation-details">
+  Implementation details
+  <a class="anchor" href="#implementation-details">#</a>
+</h4>
+<p>As lifeiteng uses Lhotse, we have to make our dataset something like libriTTS.
+We also need to use its CutSet as dataset class, and its Sampler when constructing dataloader.</p>
+<p>Lifeiteng and Plachtaa uses different <strong>tokenizer</strong>, resulting difference in <strong>TextTokenCollator</strong></p>
+<p>Lifeiteng Tokenize logic: text_prompt -&gt; tokenizer (espeak) -&gt; phonemes -&gt; Collator (using precomputed SymbolTable) -&gt; index sequence</p>
+<p>Plachtaa Tokenize logic: text_prompt -&gt; Add language ID -&gt; tokenizer (PhonemeBpeTokenizer, with pre-defined index mapping) -&gt; index sequence directly, Collator just need to perform EOS/DOS/PAD</p>
+<p>The most important thing to notice is that Plachtaa added language ID to text prompt:</p>
+<pre tabindex="0"><code>text = &#34;[EN]&#34; + text + &#34;[EN]&#34;
+</code></pre><p>Besides, phoneme index mapping is different. For example, PAD in PhonemeBpeTokenizer is 3, but in Lifeiteng&rsquo;s Tokenizer is 0.</p>
+<p>In the model&rsquo;s <strong>forward</strong> pass, we added language embedding calculation accordingly.</p>
+<h4 id="first-run">
+  First run
+  <a class="anchor" href="#first-run">#</a>
+</h4>
+<p>Successfully trained on Plachtaa&rsquo;s pretrained model, using Lifeiteng&rsquo;s training code.
+Several key things to notice:</p>
+<ul>
+<li>Prepare our dataset in LibriTTS format</li>
+<li>Using Lifeiteng&rsquo;s VALLE forward, but added language embedding</li>
+<li>Fixed embedding size in order to load Plachtaa&rsquo;s pretrained model</li>
+<li>Fixed erros in Checkpoint, training logic, data processing (collation), etc.</li>
+<li>Fixed inference script: it correctly produces good result if we directly use pretrained model</li>
+</ul>
+<h4 id="run-2">
+  Run 2
+  <a class="anchor" href="#run-2">#</a>
+</h4>
+<ul>
+<li>learning rate 1e-5</li>
+<li>warmup-epochs 0</li>
+<li>Trained AR, epoch 80, keep ar_predict_layer unfreezed</li>
+<li>log_interval, valid_interval, checkpoint frequency and logic</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>loss</th>
+<th>Top10Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Train</td>
+<td>4.657</td>
+<td>0.5279</td>
+</tr>
+<tr>
+<td>Valid</td>
+<td>4.909</td>
+<td>0.4687</td>
+</tr>
+</tbody>
+</table>
+<h4 id="run-3">
+  Run 3
+  <a class="anchor" href="#run-3">#</a>
+</h4>
+<ul>
+<li>Add language id &ldquo;EN&rdquo; to transcription, change to PhonemeBpeTokenizer text tokenizer in prepare stage</li>
+<li>learning rate 1e-6</li>
+<li>warmup-epochs 0</li>
+<li>Trained AR, epoch 80, keep ar_predict_layer unfreezed</li>
+<li>Trained NAR epoch 180, keep nar_predict_layers unfreezed</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>loss</th>
+<th>Top10Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AR Train</td>
+<td>4.967</td>
+<td>0.4304</td>
+</tr>
+<tr>
+<td>AR Valid</td>
+<td>4.914</td>
+<td>0.4665</td>
+</tr>
+<tr>
+<td>NAR Train</td>
+<td>7.999</td>
+<td>0.01076</td>
+</tr>
+<tr>
+<td>NAR Valid</td>
+<td>7.79</td>
+<td>0.01838</td>
+</tr>
+</tbody>
+</table>
+<h4 id="run-4">
+  Run 4
+  <a class="anchor" href="#run-4">#</a>
+</h4>
+<ul>
+<li>Fixed wrong embedding used in AR forwarding</li>
+<li>learning rate 0.04 (ScaledAdam should be smart enough)</li>
+<li>warmup-epochs 200</li>
+<li>Trained AR, epoch 160, keep ar_predict_layer unfreezed</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>loss</th>
+<th>Top10Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AR Train</td>
+<td>4.765</td>
+<td>0.4365</td>
+</tr>
+<tr>
+<td>AR Valid</td>
+<td>4.763</td>
+<td>0.4665</td>
+</tr>
+</tbody>
+</table>
+<h4 id="run-5">
+  Run 5
+  <a class="anchor" href="#run-5">#</a>
+</h4>
+<ul>
+<li>Fixed forward logic: removed enrolled_len</li>
+<li>learning rate 1e-4, ScaledAdam</li>
+<li>warmup-epochs 200</li>
+<li>Trained AR, epoch 1000, keep ar_predict_layer unfreezed</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>loss</th>
+<th>Top10Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AR Train</td>
+<td>4.396</td>
+<td>0.4497</td>
+</tr>
+<tr>
+<td>AR Valid</td>
+<td>4.504</td>
+<td>0.4697</td>
+</tr>
+</tbody>
+</table>
+<h4 id="run-6">
+  Run 6
+  <a class="anchor" href="#run-6">#</a>
+</h4>
+<ul>
+<li>libriTTS dataset: dev-clean, test-clean (train cut 08:58:13, dev cut 00:47:31, test cut 08:34:09)</li>
+<li>learning rate 1e-5, ScaledAdam, warmup-epochs 200</li>
+<li>AR, 20 epochs, (did not include validation as valid_interval was wrong)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>loss</th>
+<th>Top10Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AR Train</td>
+<td>5.748</td>
+<td>0.1868</td>
+</tr>
+</tbody>
+</table>
+<h4 id="run-7">
+  Run 7
+  <a class="anchor" href="#run-7">#</a>
+</h4>
+<ul>
+<li>learning rate 0.04, ScaledAdam, warmup-epochs 200</li>
+<li>AR 20 epochs, NAR 20 epochs</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>loss</th>
+<th>Top10Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AR Train</td>
+<td>5.748</td>
+<td>0.1868</td>
+</tr>
+<tr>
+<td>AR Valid</td>
+<td>5.923</td>
+<td>0.1715</td>
+</tr>
+<tr>
+<td>NAR Train</td>
+<td>5.669</td>
+<td>0.2045</td>
+</tr>
+<tr>
+<td>NAR Valid</td>
+<td>5.759</td>
+<td>0.1858</td>
+</tr>
+</tbody>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#vits">VITS</a></li>
+    <li><a href="#yourtts">YourTTS</a></li>
+    <li><a href="#vall-e">VALL-E</a>
+      <ul>
+        <li><a href="#enhuizhttpsgithubcomsyntheticspeechvall-e-enhuiz"><a href="https://github.com/SyntheticSpeech/vall-e-enhuiz">enhuiz</a></a></li>
+        <li><a href="#eckerhttpsgithubcomsyntheticspeechvall-e-ecker"><a href="https://github.com/SyntheticSpeech/vall-e-ecker">Ecker</a></a></li>
+        <li><a href="#lifeitenghttpsgithubcomsyntheticspeechvall-e"><a href="https://github.com/SyntheticSpeech/vall-e">Lifeiteng</a></a></li>
+        <li><a href="#plachtaahttpsgithubcomsyntheticspeechvall-e-x"><a href="https://github.com/SyntheticSpeech/VALL-E-X">Plachtaa</a></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
