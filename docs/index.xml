@@ -26,16 +26,11 @@ The repo has a pretrained model on VCTK and some Animes. It can be used for fine
 We self recorded a tiny collection of voices, and tried to fine-tune pretrained VITS model based on this dataset.</description>
     </item>
     <item>
-      <title>Meet the Team</title>
-      <link>https://syntheticspeech.github.io/docs/team/</link>
-      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
-      <guid>https://syntheticspeech.github.io/docs/team/</guid>
-      <description>Meet the Team # *Draft* # TODO: Images, linkedin contact and info
-As part of a collboration between SLAC, CMU and Stanford.
-SLAC # Sponsor point(s) of contact: Mayank Malik (mayank13@stanford.edu)
-CMU Faculty # Special Thanks to CMU Faculty
-David Varodayan (dvaroday@andrew.cmu.edu) Cynthia Kuo Sujata Telang Gladys Mercier CMU Student Team # Technical lead(s): Nivea Sharma (niveas@andrew.cmu.edu) Engineering Team:
-Hao Ren (haoren@andrew.cmu.edu) Sivani Papini (spapini@andrew.cmu.edu) Thenuga Priyadharshini (tpriyadh@andrew.cmu.edu) Tianyi Li (tianyil3@andrew.</description>
+      <title>Related Work</title>
+      <link>https://syntheticspeech.github.io/docs/related-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/related-work/</guid>
+      <description> The Evolution of Text-to-Speech and Voice Cloning # </description>
     </item>
     <item>
       <title>Samples</title>
@@ -51,6 +46,18 @@ Hao Ren (haoren@andrew.cmu.edu) Sivani Papini (spapini@andrew.cmu.edu) Thenuga P
       <guid>https://syntheticspeech.github.io/docs/references/</guid>
       <description>References # *Draft* # TODO: Formatting to apa/mla
 https://arxiv.org/pdf/2210.13438.pdf — The Encodec paper (High Fidelity Neural Audio Compression) https://wiki.aalto.fi/display/ITSP/Concatenative+speech+synthesis — Explanation on concatenative speech synthesis https://www.youtube.com/watch?v=aLBedWj-5CQ&amp;t=1s — Deep dive into speech synthesis meetup (HuggingFace) https://www.youtube.com/watch?v=MA8PCvmr8B0 — Pushing the frontier of neural text to speech (Microsoft Research) https://www.youtube.com/watch?v=G9k-2mYl6Vo&amp;t=5593s — Excellent video by John Tan Chong Min about VALL-E https://www.youtube.com/watch?v=mV7bhf6b2Hs — Excellent video by Aleksa Gordic about Encodec</description>
+    </item>
+    <item>
+      <title>Meet the Team</title>
+      <link>https://syntheticspeech.github.io/docs/team/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/team/</guid>
+      <description>Meet the Team # *Draft* # TODO: Images, linkedin contact and info
+As part of a collboration between SLAC, CMU and Stanford.
+SLAC # Sponsor point(s) of contact: Mayank Malik (mayank13@stanford.edu)
+CMU Faculty # Special Thanks to CMU Faculty
+David Varodayan (dvaroday@andrew.cmu.edu) Cynthia Kuo Sujata Telang Gladys Mercier CMU Student Team # Technical lead(s): Nivea Sharma (niveas@andrew.cmu.edu) Engineering Team:
+Hao Ren (haoren@andrew.cmu.edu) Sivani Papini (spapini@andrew.cmu.edu) Thenuga Priyadharshini (tpriyadh@andrew.cmu.edu) Tianyi Li (tianyil3@andrew.</description>
     </item>
   </channel>
 </rss>
