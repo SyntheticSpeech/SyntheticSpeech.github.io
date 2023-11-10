@@ -45,6 +45,14 @@ David Varodayan Cynthia Kuo Sujata Telang Gladys Mercier </description>
       <description> Samples # XTTS and VALL-E-X # Speaker Prompt VALL-E X XTTS hao_31_24000.mp4 hao_vallex.mp4 hao_xtts.mp4 amused.mp4 vallex-amused.mp4 xtts-amused.mp4 anger.mp4 vallex-anger.mp4 xtts-anger.mp4 disgust.mp4 vallex-amused.mp4 xtts-amused.mp4 muffled.mp4 vallex-muffled.mp4 xtts-muffled.mp4 libri.mp4 libri-vallex.mp4 libri-xtts.mp4 vctk.mp4 vctk-vallex.mp4 vctk-xtts.mp4 </description>
     </item>
     <item>
+      <title>References</title>
+      <link>https://syntheticspeech.github.io/docs/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/references/</guid>
+      <description>References # *Draft* # TODO: Formatting to apa/mla
+https://arxiv.org/pdf/2210.13438.pdf — The Encodec paper (High Fidelity Neural Audio Compression) https://wiki.aalto.fi/display/ITSP/Concatenative+speech+synthesis — Explanation on concatenative speech synthesis https://www.youtube.com/watch?v=aLBedWj-5CQ&amp;t=1s — Deep dive into speech synthesis meetup (HuggingFace) https://www.youtube.com/watch?v=MA8PCvmr8B0 — Pushing the frontier of neural text to speech (Microsoft Research) https://www.youtube.com/watch?v=G9k-2mYl6Vo&amp;t=5593s — Excellent video by John Tan Chong Min about VALL-E https://www.youtube.com/watch?v=mV7bhf6b2Hs — Excellent video by Aleksa Gordic about Encodec</description>
+    </item>
+    <item>
       <title></title>
       <link>https://syntheticspeech.github.io/menu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
