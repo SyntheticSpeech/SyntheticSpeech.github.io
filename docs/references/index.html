@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="References # *Draft* # TODO: Formatting to apa/mla
-https://arxiv.org/pdf/2210.13438.pdf — The Encodec paper (High Fidelity Neural Audio Compression) https://wiki.aalto.fi/display/ITSP/Concatenative&#43;speech&#43;synthesis — Explanation on concatenative speech synthesis https://www.youtube.com/watch?v=aLBedWj-5CQ&t=1s — Deep dive into speech synthesis meetup (HuggingFace) https://www.youtube.com/watch?v=MA8PCvmr8B0 — Pushing the frontier of neural text to speech (Microsoft Research) https://www.youtube.com/watch?v=G9k-2mYl6Vo&t=5593s — Excellent video by John Tan Chong Min about VALL-E https://www.youtube.com/watch?v=mV7bhf6b2Hs — Excellent video by Aleksa Gordic about Encodec">
+<meta name="description" content="References # *Draft* # [1] A. van den Oord et al., “WaveNet: A Generative Model for Raw Audio,” 2016, doi: 10.48550/ARXIV.1609.03499.
+[2] A. Défossez, J. Copet, G. Synnaeve, and Y. Adi, “High Fidelity Neural Audio Compression,” 2022, doi: 10.48550/ARXIV.2210.13438.
+[3] W. Ping et al., “Deep Voice 3: Scaling Text-to-Speech with Convolutional Sequence Learning,” 2017, doi: 10.48550/ARXIV.1710.07654.
+[4] X. Tan, T. Qin, F. Soong, and T.-Y. Liu, “A Survey on Neural Speech Synthesis,” 2021, doi: 10.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="References" />
-<meta property="og:description" content="References # *Draft* # TODO: Formatting to apa/mla
-https://arxiv.org/pdf/2210.13438.pdf — The Encodec paper (High Fidelity Neural Audio Compression) https://wiki.aalto.fi/display/ITSP/Concatenative&#43;speech&#43;synthesis — Explanation on concatenative speech synthesis https://www.youtube.com/watch?v=aLBedWj-5CQ&t=1s — Deep dive into speech synthesis meetup (HuggingFace) https://www.youtube.com/watch?v=MA8PCvmr8B0 — Pushing the frontier of neural text to speech (Microsoft Research) https://www.youtube.com/watch?v=G9k-2mYl6Vo&t=5593s — Excellent video by John Tan Chong Min about VALL-E https://www.youtube.com/watch?v=mV7bhf6b2Hs — Excellent video by Aleksa Gordic about Encodec" />
+<meta property="og:description" content="References # *Draft* # [1] A. van den Oord et al., “WaveNet: A Generative Model for Raw Audio,” 2016, doi: 10.48550/ARXIV.1609.03499.
+[2] A. Défossez, J. Copet, G. Synnaeve, and Y. Adi, “High Fidelity Neural Audio Compression,” 2022, doi: 10.48550/ARXIV.2210.13438.
+[3] W. Ping et al., “Deep Voice 3: Scaling Text-to-Speech with Convolutional Sequence Learning,” 2017, doi: 10.48550/ARXIV.1710.07654.
+[4] X. Tan, T. Qin, F. Soong, and T.-Y. Liu, “A Survey on Neural Speech Synthesis,” 2021, doi: 10." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://syntheticspeech.github.io/docs/references/" /><meta property="article:section" content="docs" />
 
@@ -20,7 +24,7 @@ https://arxiv.org/pdf/2210.13438.pdf — The Encodec paper (High Fidelity Neural
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.f0b37ec174b0ce3d1db708eba7bbf423411d8f5dcb6072aa7e34c6a09ecb34f2.js" integrity="sha256-8LN&#43;wXSwzj0dtwjrp7v0I0Edj13LYHKqfjTGoJ7LNPI=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.c3b7114ca24e2ffd85b186add06ee12f92f27972bda36a1cc1abf2a7290da88b.js" integrity="sha256-w7cRTKJOL/2FsYat0G7hL5LyeXK9o2ocwavypykNqIs=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -98,8 +102,42 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/related-work/" class="">Related Work</a>
+    <input type="checkbox" id="section-696a5458982dba1505ce49c97f207fbd" class="toggle"  />
+    <label for="section-696a5458982dba1505ce49c97f207fbd" class="flex justify-between">
+      <a href="/docs/related_work/" class="">Related Work</a>
+    </label>
   
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/related_work/zero-shot-tts/" class="">Zero-Shot TTS</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/related_work/valle/" class="">VALL-E</a>
+  
+
+        </li>
+      
+    
+  </ul>
 
         </li>
       
@@ -198,6 +236,8 @@ https://github.com/alex-shpak/hugo-book
     <li>
       <ul>
         <li></li>
+        <li><a href="#datasets">Datasets</a></li>
+        <li><a href="#more-resources">More Resources</a></li>
       </ul>
     </li>
   </ul>
@@ -220,13 +260,30 @@ https://github.com/alex-shpak/hugo-book
   *Draft*
   <a class="anchor" href="#draft">#</a>
 </h5>
-<p><em>TODO: Formatting to apa/mla</em></p>
-<p><a href="https://arxiv.org/pdf/2210.13438.pdf">https://arxiv.org/pdf/2210.13438.pdf</a> — The Encodec paper (High Fidelity Neural Audio Compression)
-<a href="https://wiki.aalto.fi/display/ITSP/Concatenative&#43;speech&#43;synthesis">https://wiki.aalto.fi/display/ITSP/Concatenative+speech+synthesis</a> — Explanation on concatenative speech synthesis
-<a href="https://www.youtube.com/watch?v=aLBedWj-5CQ&amp;t=1s">https://www.youtube.com/watch?v=aLBedWj-5CQ&t=1s</a> — Deep dive into speech synthesis meetup (HuggingFace)
-<a href="https://www.youtube.com/watch?v=MA8PCvmr8B0">https://www.youtube.com/watch?v=MA8PCvmr8B0</a> — Pushing the frontier of neural text to speech (Microsoft Research)
-<a href="https://www.youtube.com/watch?v=G9k-2mYl6Vo&amp;t=5593s">https://www.youtube.com/watch?v=G9k-2mYl6Vo&t=5593s</a> — Excellent video by John Tan Chong Min about VALL-E
-<a href="https://www.youtube.com/watch?v=mV7bhf6b2Hs">https://www.youtube.com/watch?v=mV7bhf6b2Hs</a> — Excellent video by Aleksa Gordic about Encodec</p>
+<p>[1] A. van den Oord et al., “WaveNet: A Generative Model for Raw Audio,” 2016, doi: 10.48550/ARXIV.1609.03499.</p>
+<p>[2] A. Défossez, J. Copet, G. Synnaeve, and Y. Adi, “High Fidelity Neural Audio Compression,” 2022, doi: 10.48550/ARXIV.2210.13438.</p>
+<p>[3] W. Ping et al., “Deep Voice 3: Scaling Text-to-Speech with Convolutional Sequence Learning,” 2017, doi: 10.48550/ARXIV.1710.07654.</p>
+<p>[4] X. Tan, T. Qin, F. Soong, and T.-Y. Liu, “A Survey on Neural Speech Synthesis,” 2021, doi: 10.48550/ARXIV.2106.15561.</p>
+<p>[5] J. M. R. Sotelo et al., “Char2Wav: End-to-End Speech Synthesis,” Feb. 2017. Accessed: Nov. 10, 2023. [Online]. Available: <a href="https://www.semanticscholar.org/paper/Char2Wav%3A-End-to-End-Speech-Synthesis-Sotelo-Mehri/9203d6c076bffe87336f2ea91f5851436c02dbe6">https://www.semanticscholar.org/paper/Char2Wav%3A-End-to-End-Speech-Synthesis-Sotelo-Mehri/9203d6c076bffe87336f2ea91f5851436c02dbe6</a></p>
+<h3 id="datasets">
+  Datasets
+  <a class="anchor" href="#datasets">#</a>
+</h3>
+<ul>
+<li><a href="https://datashare.ed.ac.uk/handle/10283/2950">VCTK</a></li>
+<li><a href="https://www.openslr.org/12">LibriSpeech ASR Corpus</a></li>
+</ul>
+<h3 id="more-resources">
+  More Resources
+  <a class="anchor" href="#more-resources">#</a>
+</h3>
+<ul>
+<li><a href="https://wiki.aalto.fi/display/ITSP/Concatenative&#43;speech&#43;synthesis">Concatenative speech synthesis</a></li>
+<li><a href="https://www.youtube.com/watch?v=aLBedWj-5CQ&amp;t=1s">Hugging Face - TTS Deep Dive</a></li>
+<li><a href="https://www.youtube.com/watch?v=MA8PCvmr8B0">Microsoft Research - Pushing the frontier of neural text to speech</a></li>
+<li><a href="https://youtu.be/G9k-2mYl6Vo?si=crkgek9tC8BV4_tK">John Tan Chong Min - Using Transformers to mimic anyone&rsquo;s voice!</a></li>
+<li><a href="https://www.youtube.com/watch?v=mV7bhf6b2Hs">Aleksa Gordić - High Fidelity Neural Audio Compression</a></li>
+</ul>
 </article>
  
       
@@ -271,6 +328,8 @@ https://github.com/alex-shpak/hugo-book
     <li>
       <ul>
         <li></li>
+        <li><a href="#datasets">Datasets</a></li>
+        <li><a href="#more-resources">More Resources</a></li>
       </ul>
     </li>
   </ul>

@@ -26,13 +26,6 @@ The repo has a pretrained model on VCTK and some Animes. It can be used for fine
 We self recorded a tiny collection of voices, and tried to fine-tune pretrained VITS model based on this dataset.</description>
     </item>
     <item>
-      <title>Related Work</title>
-      <link>https://syntheticspeech.github.io/docs/related-work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://syntheticspeech.github.io/docs/related-work/</guid>
-      <description> The Evolution of Text-to-Speech and Voice Cloning # </description>
-    </item>
-    <item>
       <title>Samples</title>
       <link>https://syntheticspeech.github.io/docs/samples/</link>
       <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
@@ -44,8 +37,10 @@ We self recorded a tiny collection of voices, and tried to fine-tune pretrained 
       <link>https://syntheticspeech.github.io/docs/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/references/</guid>
-      <description>References # *Draft* # TODO: Formatting to apa/mla
-https://arxiv.org/pdf/2210.13438.pdf — The Encodec paper (High Fidelity Neural Audio Compression) https://wiki.aalto.fi/display/ITSP/Concatenative+speech+synthesis — Explanation on concatenative speech synthesis https://www.youtube.com/watch?v=aLBedWj-5CQ&amp;t=1s — Deep dive into speech synthesis meetup (HuggingFace) https://www.youtube.com/watch?v=MA8PCvmr8B0 — Pushing the frontier of neural text to speech (Microsoft Research) https://www.youtube.com/watch?v=G9k-2mYl6Vo&amp;t=5593s — Excellent video by John Tan Chong Min about VALL-E https://www.youtube.com/watch?v=mV7bhf6b2Hs — Excellent video by Aleksa Gordic about Encodec</description>
+      <description>References # *Draft* # [1] A. van den Oord et al., “WaveNet: A Generative Model for Raw Audio,” 2016, doi: 10.48550/ARXIV.1609.03499.
+[2] A. Défossez, J. Copet, G. Synnaeve, and Y. Adi, “High Fidelity Neural Audio Compression,” 2022, doi: 10.48550/ARXIV.2210.13438.
+[3] W. Ping et al., “Deep Voice 3: Scaling Text-to-Speech with Convolutional Sequence Learning,” 2017, doi: 10.48550/ARXIV.1710.07654.
+[4] X. Tan, T. Qin, F. Soong, and T.-Y. Liu, “A Survey on Neural Speech Synthesis,” 2021, doi: 10.</description>
     </item>
     <item>
       <title>Meet the Team</title>

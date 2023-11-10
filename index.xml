@@ -16,6 +16,13 @@
       <description>Deepfakes, Then and Now # Deepfake videos and images that convincingly replace one person&amp;rsquo;s likeness with another&amp;rsquo;s, have rapidly grown in popularity and sophistication. The generation of deepfakes for both benign and nefarious purposes has only become more accessible through apps like FakeApp, Synthesia, Deepfakesweb.com and more. As a result, research into deepfakes has surged, driven by the need to understand, detect, and mitigate the potential threats they pose.</description>
     </item>
     <item>
+      <title>Zero-Shot TTS</title>
+      <link>https://syntheticspeech.github.io/docs/related_work/zero-shot-tts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/related_work/zero-shot-tts/</guid>
+      <description>Zero-Shot TTS # The next leap made for the generation of deepfaked audios is zero-shot TTSes. Zero-shot text-to-speech (TTS) refers to the capability of a system to generate speech in a target voice without any specific training on that particular voice. In a traditional TTS system, training involves using a large dataset of recordings from a specific speaker to learn the characteristics of that speaker&amp;rsquo;s voice. In contrast, zero-shot TTS aims to generate speech in a new, unseen voice without requiring explicit training on that voice.</description>
+    </item>
+    <item>
       <title>Our Research</title>
       <link>https://syntheticspeech.github.io/docs/our-research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -26,11 +33,11 @@ The repo has a pretrained model on VCTK and some Animes. It can be used for fine
 We self recorded a tiny collection of voices, and tried to fine-tune pretrained VITS model based on this dataset.</description>
     </item>
     <item>
-      <title>Related Work</title>
-      <link>https://syntheticspeech.github.io/docs/related-work/</link>
+      <title>VALL-E</title>
+      <link>https://syntheticspeech.github.io/docs/related_work/valle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://syntheticspeech.github.io/docs/related-work/</guid>
-      <description> The Evolution of Text-to-Speech and Voice Cloning # </description>
+      <guid>https://syntheticspeech.github.io/docs/related_work/valle/</guid>
+      <description>VALL-E # VALL-E is a neural codec language model for text-to-speech (TTS) synthesis that can generate high-quality speech that is indistinguishable from human speech. It is trained on a massive dataset of text and audio, and can also clone speakers&amp;rsquo; voices, even from a short sample of their speech. VALL-E works by first converting text into a sequence of discrete codes. These codes are then used to generate a corresponding sequence of audio tokens.</description>
     </item>
     <item>
       <title>Samples</title>
@@ -44,8 +51,10 @@ We self recorded a tiny collection of voices, and tried to fine-tune pretrained 
       <link>https://syntheticspeech.github.io/docs/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/references/</guid>
-      <description>References # *Draft* # TODO: Formatting to apa/mla
-https://arxiv.org/pdf/2210.13438.pdf — The Encodec paper (High Fidelity Neural Audio Compression) https://wiki.aalto.fi/display/ITSP/Concatenative+speech+synthesis — Explanation on concatenative speech synthesis https://www.youtube.com/watch?v=aLBedWj-5CQ&amp;t=1s — Deep dive into speech synthesis meetup (HuggingFace) https://www.youtube.com/watch?v=MA8PCvmr8B0 — Pushing the frontier of neural text to speech (Microsoft Research) https://www.youtube.com/watch?v=G9k-2mYl6Vo&amp;t=5593s — Excellent video by John Tan Chong Min about VALL-E https://www.youtube.com/watch?v=mV7bhf6b2Hs — Excellent video by Aleksa Gordic about Encodec</description>
+      <description>References # *Draft* # [1] A. van den Oord et al., “WaveNet: A Generative Model for Raw Audio,” 2016, doi: 10.48550/ARXIV.1609.03499.
+[2] A. Défossez, J. Copet, G. Synnaeve, and Y. Adi, “High Fidelity Neural Audio Compression,” 2022, doi: 10.48550/ARXIV.2210.13438.
+[3] W. Ping et al., “Deep Voice 3: Scaling Text-to-Speech with Convolutional Sequence Learning,” 2017, doi: 10.48550/ARXIV.1710.07654.
+[4] X. Tan, T. Qin, F. Soong, and T.-Y. Liu, “A Survey on Neural Speech Synthesis,” 2021, doi: 10.</description>
     </item>
     <item>
       <title>Meet the Team</title>
@@ -58,13 +67,6 @@ SLAC # Sponsor point(s) of contact: Mayank Malik (mayank13@stanford.edu)
 CMU Faculty # Special Thanks to CMU Faculty
 David Varodayan (dvaroday@andrew.cmu.edu) Cynthia Kuo Sujata Telang Gladys Mercier CMU Student Team # Technical lead(s): Nivea Sharma (niveas@andrew.cmu.edu) Engineering Team:
 Hao Ren (haoren@andrew.cmu.edu) Sivani Papini (spapini@andrew.cmu.edu) Thenuga Priyadharshini (tpriyadh@andrew.cmu.edu) Tianyi Li (tianyil3@andrew.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://syntheticspeech.github.io/menu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://syntheticspeech.github.io/menu/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
