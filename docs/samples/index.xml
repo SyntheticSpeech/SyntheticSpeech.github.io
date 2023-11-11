@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Synthetic Audio Generation</title>
+    <link>https://syntheticspeech.github.io/docs/samples/</link>
+    <description>Recent content on Synthetic Audio Generation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Nov 2023 14:54:44 -0700</lastBuildDate>
+    <atom:link href="https://syntheticspeech.github.io/docs/samples/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XTTS vs. VALL-E-X</title>
+      <link>https://syntheticspeech.github.io/docs/samples/xtts_vallex/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/samples/xtts_vallex/</guid>
+      <description>XTTS vs. VALL-E-X # We present the results of our work below, categorized based on the models we ran and the different vocal features we were testing for.
+Custom Voice Input # Input voice: XTTS VALL-E-X Voice with Emotion # These samples demonstrate how XTTS and VALL-E X retain the emotion of the input voice.
+Input voice (Emotion: Amused): XTTS VALL-E-X Input voice (Emotion: Anger): XTTS VALL-E-X Input voice (Emotion: Disgust): XTTS VALL-E-X Voice with Environmental Noise and Textures # These samples demonstrate how XTTS and VALL-E X handle voice inputs that have an environment or texture that causes the voice to sound like it has a filter.</description>
+    </item>
+  </channel>
+</rss>

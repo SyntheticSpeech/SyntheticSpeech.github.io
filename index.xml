@@ -9,6 +9,15 @@
     <lastBuildDate>Thu, 02 Nov 2023 11:54:44 -0700</lastBuildDate>
     <atom:link href="https://syntheticspeech.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>XTTS vs. VALL-E-X</title>
+      <link>https://syntheticspeech.github.io/docs/samples/xtts_vallex/</link>
+      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/samples/xtts_vallex/</guid>
+      <description>XTTS vs. VALL-E-X # We present the results of our work below, categorized based on the models we ran and the different vocal features we were testing for.
+Custom Voice Input # Input voice: XTTS VALL-E-X Voice with Emotion # These samples demonstrate how XTTS and VALL-E X retain the emotion of the input voice.
+Input voice (Emotion: Amused): XTTS VALL-E-X Input voice (Emotion: Anger): XTTS VALL-E-X Input voice (Emotion: Disgust): XTTS VALL-E-X Voice with Environmental Noise and Textures # These samples demonstrate how XTTS and VALL-E X handle voice inputs that have an environment or texture that causes the voice to sound like it has a filter.</description>
+    </item>
+    <item>
       <title>Deepfakes, Then and Now</title>
       <link>https://syntheticspeech.github.io/docs/deepfakes-history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -38,14 +47,6 @@ We self recorded a tiny collection of voices, and tried to fine-tune pretrained 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/related_work/valle/</guid>
       <description>VALL-E # VALL-E is a neural codec language model for text-to-speech (TTS) synthesis that can generate high-quality speech that is indistinguishable from human speech. It is trained on a massive dataset of text and audio, and can also clone speakers&amp;rsquo; voices, even from a short sample of their speech. VALL-E works by first converting text into a sequence of discrete codes. These codes are then used to generate a corresponding sequence of audio tokens.</description>
-    </item>
-    <item>
-      <title>Samples</title>
-      <link>https://syntheticspeech.github.io/docs/samples/</link>
-      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
-      <guid>https://syntheticspeech.github.io/docs/samples/</guid>
-      <description> Samples # We present the results of our work below, categorized based on the models we ran and the different vocal features we were testing for.
-XTTS vs. VALL-E-X # Custom Voice Input # Input voice: XTTS VALL-E-X </description>
     </item>
     <item>
       <title>References</title>

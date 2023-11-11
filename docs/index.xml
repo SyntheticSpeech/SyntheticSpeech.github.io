@@ -26,14 +26,6 @@ The repo has a pretrained model on VCTK and some Animes. It can be used for fine
 We self recorded a tiny collection of voices, and tried to fine-tune pretrained VITS model based on this dataset.</description>
     </item>
     <item>
-      <title>Samples</title>
-      <link>https://syntheticspeech.github.io/docs/samples/</link>
-      <pubDate>Wed, 01 Nov 2023 14:54:44 -0700</pubDate>
-      <guid>https://syntheticspeech.github.io/docs/samples/</guid>
-      <description> Samples # We present the results of our work below, categorized based on the models we ran and the different vocal features we were testing for.
-XTTS vs. VALL-E-X # Custom Voice Input # Input voice: XTTS VALL-E-X </description>
-    </item>
-    <item>
       <title>References</title>
       <link>https://syntheticspeech.github.io/docs/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

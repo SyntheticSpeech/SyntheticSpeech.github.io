@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://syntheticspeech.github.io/docs/samples/xtts_vallex/</loc>
+    <lastmod>2023-11-01T14:54:44-07:00</lastmod>
+  </url><url>
     <loc>https://syntheticspeech.github.io/docs/deepfakes-history/</loc>
   </url><url>
     <loc>https://syntheticspeech.github.io/docs/related_work/zero-shot-tts/</loc>
@@ -10,10 +13,10 @@
   </url><url>
     <loc>https://syntheticspeech.github.io/docs/related_work/valle/</loc>
   </url><url>
-    <loc>https://syntheticspeech.github.io/docs/related_work/</loc>
-  </url><url>
     <loc>https://syntheticspeech.github.io/docs/samples/</loc>
     <lastmod>2023-11-01T14:54:44-07:00</lastmod>
+  </url><url>
+    <loc>https://syntheticspeech.github.io/docs/related_work/</loc>
   </url><url>
     <loc>https://syntheticspeech.github.io/docs/references/</loc>
   </url><url>
