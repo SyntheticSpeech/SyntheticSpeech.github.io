@@ -17,5 +17,26 @@
 Custom Voice Input # Input voice: XTTS VALL-E-X Voice with Emotion # These samples demonstrate how XTTS and VALL-E X retain the emotion of the input voice.
 Input voice (Emotion: Amused): XTTS VALL-E-X Input voice (Emotion: Anger): XTTS VALL-E-X Input voice (Emotion: Disgust): XTTS VALL-E-X Voice with Environmental Noise and Textures # These samples demonstrate how XTTS and VALL-E X handle voice inputs that have an environment or texture that causes the voice to sound like it has a filter.</description>
     </item>
+    <item>
+      <title>Fine-tuned VALL-E X</title>
+      <link>https://syntheticspeech.github.io/docs/samples/fine-tune-vallex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/samples/fine-tune-vallex/</guid>
+      <description> Fine-tuned VALL-E X # </description>
+    </item>
+    <item>
+      <title>Fine-tuned yourTTS</title>
+      <link>https://syntheticspeech.github.io/docs/samples/fine-tune-yourtts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/samples/fine-tune-yourtts/</guid>
+      <description> Fine-tuned yourTTS # </description>
+    </item>
+    <item>
+      <title>Fine-tunes VITS</title>
+      <link>https://syntheticspeech.github.io/docs/samples/fine_tune_vits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/samples/fine_tune_vits/</guid>
+      <description> Fine-tuned VITS # Anne Hathaway # Input samples: Output samples: </description>
+    </item>
   </channel>
 </rss>
