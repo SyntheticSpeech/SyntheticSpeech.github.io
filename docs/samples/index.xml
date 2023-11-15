@@ -32,11 +32,12 @@ Input voice (Emotion: Amused): XTTS VALL-E-X Input voice (Emotion: Anger): XTTS 
       <description> Fine-tuned yourTTS # </description>
     </item>
     <item>
-      <title>Fine-tunes VITS</title>
+      <title>Fine-tuned VITS</title>
       <link>https://syntheticspeech.github.io/docs/samples/fine_tune_vits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/samples/fine_tune_vits/</guid>
-      <description> Fine-tuned VITS # Anne Hathaway # Input samples: Output samples: </description>
+      <description> Fine-tuned VITS # Using Anne Hathaway&amp;rsquo;s Voice as Input # Input sample Output
+Condition Sample Output 1 using a prompt from the input sample Output 2 using a prompt from the input sample Output 3 using a prompt from the input sample Using a long sentence as the text prompt Using an input sample from the training dataset Custom Input Voice # Input sample Outputs </description>
     </item>
   </channel>
 </rss>

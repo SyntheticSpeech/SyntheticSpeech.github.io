@@ -46,11 +46,12 @@ Input voice (Emotion: Amused): XTTS VALL-E-X Input voice (Emotion: Anger): XTTS 
       <description>Zero-Shot TTS # The next leap made for the generation of deepfaked audios is zero-shot TTSes. Zero-shot text-to-speech (TTS) refers to the capability of a system to generate speech in a target voice without any specific training on that particular voice. In a traditional TTS system, training involves using a large dataset of recordings from a specific speaker to learn the characteristics of that speaker&amp;rsquo;s voice. In contrast, zero-shot TTS aims to generate speech in a new, unseen voice without requiring explicit training on that voice.</description>
     </item>
     <item>
-      <title>Fine-tunes VITS</title>
+      <title>Fine-tuned VITS</title>
       <link>https://syntheticspeech.github.io/docs/samples/fine_tune_vits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/samples/fine_tune_vits/</guid>
-      <description> Fine-tuned VITS # Anne Hathaway # Input samples: Output samples: </description>
+      <description> Fine-tuned VITS # Using Anne Hathaway&amp;rsquo;s Voice as Input # Input sample Output
+Condition Sample Output 1 using a prompt from the input sample Output 2 using a prompt from the input sample Output 3 using a prompt from the input sample Using a long sentence as the text prompt Using an input sample from the training dataset Custom Input Voice # Input sample Outputs </description>
     </item>
     <item>
       <title>Our Research</title>
