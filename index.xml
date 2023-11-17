@@ -36,7 +36,7 @@ Input voice (Emotion: Amused): XTTS VALL-E-X Input voice (Emotion: Anger): XTTS 
       <link>https://syntheticspeech.github.io/docs/samples/fine-tune-yourtts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/samples/fine-tune-yourtts/</guid>
-      <description> Fine-tuned yourTTS # Unfortunately, we were not obtain good results with this model at all. We have just provided an output for documentation purposes: </description>
+      <description> Fine-tuned yourTTS # Unfortunately, we were not able to obtain good results with this model at all. We have just provided an output for documentation purposes: </description>
     </item>
     <item>
       <title>Zero-Shot TTS</title>
@@ -51,7 +51,7 @@ Input voice (Emotion: Amused): XTTS VALL-E-X Input voice (Emotion: Anger): XTTS 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/samples/fine_tune_vits/</guid>
       <description> Fine-tuned VITS # Using Anne Hathaway&amp;rsquo;s Voice as Input # Input sample Output
-Condition Sample Output 1 using a prompt from the input sample Output 2 using a prompt from the input sample Output 3 using a prompt from the input sample Using a long sentence as the text prompt Using an input sample from the training dataset Custom Input Voice # Input sample Output sample Long Input Voice (Chinese) # Input sample Output sample LibriSpeech Input # Input sample Output sample </description>
+Condition Sample Output 1 using a prompt from the input sample Output 2 using a prompt from the input sample Output 3 using a prompt from the input sample Using a long sentence as the text prompt Using an input sample from the training dataset Custom Input Voice # Input sample Output samples Long Input Voice (Chinese) # Input sample Output sample (Chinese) LibriSpeech Input # Input sample Output sample </description>
     </item>
     <item>
       <title>Our Research</title>
