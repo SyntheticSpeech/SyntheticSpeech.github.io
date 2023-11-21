@@ -20,10 +20,10 @@
       <link>https://syntheticspeech.github.io/docs/our-research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/our-research/</guid>
-      <description>Our Research # VITS # VITS is a previous SOTA model. It is the first end-to-end model compare to previous 2-stage model, meaning there is no need to produce intermediate mel-spectrums.
+      <description>Our Research # VITS # VITS is a previous SOTA model. It is the first end-to-end model compared to the previous 2-stage model&amp;ndash; this means that there is no need to produce intermediate mel-spectrums.
 Our fine-tuning code is based on this repo.
-The repo has a pretrained model on VCTK and some Animes. It can be used for fine-tuning Chinese, Japanese and English.
-We self recorded a tiny collection of voices, and tried to fine-tune pretrained VITS model based on this dataset.</description>
+The repo has a pretrained model on VCTK using some animes. It can be used for fine-tuning Chinese, Japanese and English.
+We self recorded a small collection of voices, and tried to fine-tune the pretrained VITS model based on this dataset.</description>
     </item>
     <item>
       <title>References</title>
@@ -42,10 +42,12 @@ We self recorded a tiny collection of voices, and tried to fine-tune pretrained 
       <guid>https://syntheticspeech.github.io/docs/team/</guid>
       <description>Meet the Team # *Draft* # TODO: Images, linkedin contact and info
 As part of a collboration between SLAC, CMU and Stanford.
-SLAC # Sponsor point(s) of contact: Mayank Malik (mayank13@stanford.edu)
+SLAC # Mayank Malik
 CMU Faculty # Special Thanks to CMU Faculty
-David Varodayan (dvaroday@andrew.cmu.edu) Cynthia Kuo Sujata Telang Gladys Mercier CMU Student Team # Technical lead(s): Nivea Sharma (niveas@andrew.cmu.edu) Engineering Team:
-Hao Ren (haoren@andrew.cmu.edu) Sivani Papini (spapini@andrew.cmu.edu) Thenuga Priyadharshini (tpriyadh@andrew.cmu.edu) Tianyi Li (tianyil3@andrew.</description>
+David Varodayan Cynthia Kuo Sujata Telang Gladys Mercier CMU Student Team # Technical lead(s): Nivea Sharma Engineering Team:
+Hao Ren Sivani Papini Thenuga Priyadharshini Tianyi Li Project manager: Yixin (Sherrie) Cao
+Roles + responsibilities:
+Sponsors bring domain expertise and real-world problems to the table.</description>
     </item>
   </channel>
 </rss>
