@@ -71,6 +71,14 @@ We self recorded a small collection of voices, and tried to fine-tune the pretra
       <description>VALL-E # VALL-E is a neural codec language model for text-to-speech (TTS) synthesis that can generate high-quality speech that is indistinguishable from human speech. It is trained on a massive dataset of text and audio, and can also clone speakers&amp;rsquo; voices, even from a short sample of their speech. VALL-E works by first converting text into a sequence of discrete codes. These codes are then used to generate a corresponding sequence of audio tokens.</description>
     </item>
     <item>
+      <title>Deployment</title>
+      <link>https://syntheticspeech.github.io/docs/deployment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://syntheticspeech.github.io/docs/deployment/</guid>
+      <description>Deploying the Audio Generator # We are currently using a simple Python Flask application that we have containerized using Docker. You can find the container on DockerHub.
+We plan to host the container using AWS EC2 or ECS.</description>
+    </item>
+    <item>
       <title>References</title>
       <link>https://syntheticspeech.github.io/docs/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

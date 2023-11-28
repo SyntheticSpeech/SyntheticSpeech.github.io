@@ -24,7 +24,7 @@ We self recorded a small collection of voices, and tried to fine-tune the pretra
 <link rel="icon" href="/favicon.png" >
 <link rel="stylesheet" href="/book.min.33a48f5432973b8ff9a82679d9e45d67f2c15d4399bd2829269455cfe390b5e8.css" integrity="sha256-M6SPVDKXO4/5qCZ52eRdZ/LBXUOZvSgpJpRVz&#43;OQteg=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.2f781dae401fb8dae571dc2a5253d7f160b1f955d25d4c14ec27dbac6d2d15ce.js" integrity="sha256-L3gdrkAfuNrlcdwqUlPX8WCx&#43;VXSXUwU7CfbrG0tFc4=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.3862d8137636882fd345a390bd76c68be5a46c860927e499a747c12b24facc3e.js" integrity="sha256-OGLYE3Y2iC/TRaOQvXbGi&#43;WkbIYJJ&#43;SZp0fBKyT6zD4=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -211,6 +211,19 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/deployment/" class="">Deployment</a>
+  
 
         </li>
       
@@ -447,7 +460,7 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#plachtaahttpsgithubcomsyntheticspeechvall-e-x">#</a>
 </h3>
 <p>Checkout our fine-tuning branch.</p>
-<p>Plachtaa uses Lifeiteng&rsquo;s repo, and has a very well-trained pretrained model. The only problem is that Plachtaa deleted all training related codes, like dataset processing, training script and even the model&rsquo;s forward passes.</p>
+<p>Plachtaa uses Lifeiteng&rsquo;s repo, and has a very well-trained pretrained model. The only problem is that Plachtaa deleted all training related scripts, like dataset processing, training script and even the model&rsquo;s forward passes.</p>
 <p>There are differences between Plachtaa and Lifeiteng&rsquo;s implementation: Plachtaa supports multi-lingual features by adding language embedding, uses different tokenizer and is trained on a different dataset.</p>
 <p>We tried to rewrite all these missing training scripts, and ran our fine-tuning. The following sections summarize our experiments. We are still facing inference issues as the generated audio is mainly noise.</p>
 <h4 id="implementation-details">
@@ -456,19 +469,19 @@ https://github.com/alex-shpak/hugo-book
 </h4>
 <p>As lifeiteng uses Lhotse, we have to make our dataset something like libriTTS.
 We also need to use its CutSet as dataset class, and its Sampler when constructing dataloader.</p>
-<p>Lifeiteng and Plachtaa uses different <strong>tokenizer</strong>, resulting difference in <strong>TextTokenCollator</strong></p>
+<p>Lifeiteng and Plachtaa uses a different <strong>tokenizer</strong>, resulting in a difference in <strong>TextTokenCollator</strong></p>
 <p>Lifeiteng Tokenize logic: text_prompt -&gt; tokenizer (espeak) -&gt; phonemes -&gt; Collator (using precomputed SymbolTable) -&gt; index sequence</p>
 <p>Plachtaa Tokenize logic: text_prompt -&gt; Add language ID -&gt; tokenizer (PhonemeBpeTokenizer, with pre-defined index mapping) -&gt; index sequence directly, Collator just need to perform EOS/DOS/PAD</p>
 <p>The most important thing to notice is that Plachtaa added language ID to text prompt:</p>
 <pre tabindex="0"><code>text = &#34;[EN]&#34; + text + &#34;[EN]&#34;
 </code></pre><p>Besides, phoneme index mapping is different. For example, PAD in PhonemeBpeTokenizer is 3, but in Lifeiteng&rsquo;s Tokenizer is 0.</p>
-<p>In the model&rsquo;s <strong>forward</strong> pass, we added language embedding calculation accordingly.</p>
+<p>In the model&rsquo;s <strong>forward</strong> pass, we added the language embedding calculation accordingly.</p>
 <h4 id="first-run">
   First run
   <a class="anchor" href="#first-run">#</a>
 </h4>
 <p>Successfully trained on Plachtaa&rsquo;s pretrained model, using Lifeiteng&rsquo;s training code.
-Several key things to notice:</p>
+Key things:</p>
 <ul>
 <li>Prepare our dataset in LibriTTS format</li>
 <li>Using Lifeiteng&rsquo;s VALLE forward, but added language embedding</li>
