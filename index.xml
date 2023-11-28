@@ -75,7 +75,8 @@ We self recorded a small collection of voices, and tried to fine-tune the pretra
       <link>https://syntheticspeech.github.io/docs/deployment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://syntheticspeech.github.io/docs/deployment/</guid>
-      <description>Deploying the Audio Generator # We are currently using a simple Python Flask application that we have containerized using Docker. You can find the container on DockerHub.
+      <description>Deploying the Audio Generator # [DockerHub] [Source]
+We are currently using a simple Python Flask application that we have containerized using Docker. You can find the container on DockerHub. You can also find the source code here.
 We plan to host the container using AWS EC2 or ECS.</description>
     </item>
     <item>
